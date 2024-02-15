@@ -1,0 +1,14 @@
+Úloha: výběr souborů(parcel) dle předem daného seznamu (ve složce mají soubory předponu která v seznamu neni)
+
+1. otevreni souboru txt kde je seznam (seznam je ve stejne slozce kde jsou jednotlive soubory a zaroven tento kod)
+2. vytvoření složky do které se vybrané soubory zkopírují
+3. procházení seznamu a složky a porovnávání jednotlivých názvu
+	3.a. odstraneni/pridani predpony daneho soubory
+	3.b. najdeni jednotliveho souboru
+	3.c pokud soubor existuje 
+		3.c.a zkopirovani souboru
+		3.c.b vlozeni do nove slozky
+	3.d pokud soubor neexistuje
+		3.d.a napsat hlasku soubor XY nenalezen
+
+
