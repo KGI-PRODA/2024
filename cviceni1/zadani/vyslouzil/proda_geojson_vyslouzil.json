@@ -1,0 +1,11 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [17.5276786,49.5507056]
+    },
+    "properties": {
+        "name" : "Johnyho house",
+    "description" : "Dům největšího borce"
+    }
+}
