@@ -1,0 +1,10 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [17.2655326,49.5944091]
+    },
+    "properties": {"name":"Katedra", "description":"MISTO_Katedra"
+        
+    }
+}
