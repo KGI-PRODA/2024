@@ -1,0 +1,14 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [17.2560161, 49.5899478],
+            [17.0335431, 48.2728406]
+        ]
+    },
+    "properties": {
+       "name": "hello",
+       "description": "this is my first geojson line created in VS code" 
+    }
+}
