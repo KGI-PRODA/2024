@@ -1,0 +1,10 @@
+
+Digitalizace domk? nad starými mapami
+1. Otev?u ArcGIS projekt, nachystám data
+2. Zobrazím si starou mapu jako podklad
+3. Zapnu režim editace
+4. Kliknu na zakreslování polygon? a obkresluji objekty na map?
+- hlídám si hranice objekt?
+- v p?ípad? mén? patrných hranic objekt? používám vn?jší hranici
+
+Teoreticky by bylo možné, že by docházelo k vektorizaci automaticky na základ? hodnot pixel? (barev), ale nechce se mi nad tím p?emýšlet, tak to d?lám ru?n? ??
