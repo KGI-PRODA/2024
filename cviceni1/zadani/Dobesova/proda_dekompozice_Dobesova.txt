@@ -1,0 +1,23 @@
+Název úlohy: Ořez dat z Urban Atlasu na Core území
+
+1. Stažení dat z Urban Atlas 
+	1a) založit uživatele v Urban Atlasu
+	1b) Výběr konkrétního města
+2. Zpracování v ArcGIS Pro
+	2a) Nový projekt v ArcGIS Pro
+	2b) Přidání dat z Package do nového projektu - FUA a Core
+	2c) Clip FUA podle vstrvy Core
+	2d) Přidání legendy
+	2e) Export Clip Coredo nové geodatabáze
+3. Vytvoření JPG obrázku z Core
+3. Sestavení programu v Python pro automatický postup
+	3a) Vytvořit novou geodatabázi
+	3b) Zkopírování dat z geopackage Urban Atlasu do nové geodatabáze
+		Kopie vstev Core, FUA a Boundary
+	3c) Clip FUA podle vrstvy Core
+	3d) Přidání legendy pro novou vrtsvu Core podle UA
+	3e) Export do JPG Core do souboru na disku
+ 
+ 
+ 
+
