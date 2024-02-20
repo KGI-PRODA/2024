@@ -25,10 +25,6 @@ world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
     # Plotting
     fig, ax = plt.subplots(1, 1, figsize=(15, 10))
 
-    # Plot each continent with its assigned color
-    for continent, color in continent_colors.items():
-        world[world['continent'] == continent].plot(ax=ax, color=color)
-
     # Plot each continent with its assigned color, one by one
     world[world['continent'] == 'Africa'].plot(ax=ax, color=continent_colors['Africa'])
     world[world['continent'] == 'Europe'].plot(ax=ax, color=continent_colors['Europe'])
