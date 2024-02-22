@@ -7,7 +7,7 @@ thresholds = [100000000, 300000000, 500000000]
 
 # Loop through the threshold values
 for threshold in thresholds:
-# Load the world map
+    # Load the world map
     world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
 
     # Assign colors to each continent for differentiation
@@ -25,20 +25,14 @@ for threshold in thresholds:
     # Plotting
     fig, ax = plt.subplots(1, 1, figsize=(15, 10))
 
-    # Plot each continent with its assigned color, one by one
-    world[world['continent'] == 'Africa'].plot(ax=ax, color=continent_colors['Africa'])
-    world[world['continent'] == 'Europe'].plot(ax=ax, color=continent_colors['Europe'])
-    world[world['continent'] == 'Asia'].plot(ax=ax, color=continent_colors['Asia'])
-    world[world['continent'] == 'North America'].plot(ax=ax, color=continent_colors['North America'])
-    world[world['continent'] == 'South America'].plot(ax=ax, color=continent_colors['South America'])
-    world[world['continent'] == 'Oceania'].plot(ax=ax, color=continent_colors['Oceania'])
-    world[world['continent'] == 'Antarctica'].plot(ax=ax, color=continent_colors['Antarctica'])
+    # Plot each continent with its assigned color using a loop
+    for continent, color in continent_colors.items():
+        world[world['continent'] == continent].plot(ax=ax, color=color)
 
     # Apply hatch pattern to countries with population >= threshold
     world[world['pop_est'] > threshold].plot(ax=ax, color='none', hatch='////', edgecolor='black')
 
     # Custom legend
-    # Note: Hatch pattern in legend is a workaround since matplotlib legend does not support hatches directly
     legend_labels = [
         mpatches.Patch(facecolor='none', hatch='////', label=f'>= {threshold:,} obyvatel', edgecolor='black'),
         mpatches.Patch(facecolor='none', label=f'< {threshold:,} obyvatel', edgecolor='none')
@@ -46,7 +40,10 @@ for threshold in thresholds:
     plt.legend(handles=legend_labels, title="Populace")
 
     # Set the title of the map
-    ax.set_title('Populace států v roce 2023')
+    if threshold == thresholds[-1]:  # Check if it's the last threshold
+        ax.set_title(f'Populace států v roce 2023 při prahu {threshold:,} obyvatel')
+    else:
+        ax.set_title('Populace států v roce 2023')
 
     # Show the map
     plt.show()
