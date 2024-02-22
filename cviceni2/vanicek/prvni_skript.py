@@ -41,7 +41,7 @@ for threshold in thresholds:
 
     # Set the title of the map
     if threshold == thresholds[-1]:  # Check if it's the last threshold
-        ax.set_title(f'Populace států v roce 2023 při prahu {threshold:,} obyvatel')
+        ax.set_title(f'TOTO JE POSLEDNÍ TRESHOLD, TAKŽE JE TO ZÁROVEŇ JINÝ TITUL: Populace států v roce 2023 při prahu {threshold:,} obyvatel')
     else:
         ax.set_title('Populace států v roce 2023')
 
