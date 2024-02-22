@@ -26,13 +26,8 @@ for threshold in thresholds:
     fig, ax = plt.subplots(1, 1, figsize=(15, 10))
 
     # Plot each continent with its assigned color, one by one
-    world[world['continent'] == 'Africa'].plot(ax=ax, color=continent_colors['Africa'])
-    world[world['continent'] == 'Europe'].plot(ax=ax, color=continent_colors['Europe'])
-    world[world['continent'] == 'Asia'].plot(ax=ax, color=continent_colors['Asia'])
-    world[world['continent'] == 'North America'].plot(ax=ax, color=continent_colors['North America'])
-    world[world['continent'] == 'South America'].plot(ax=ax, color=continent_colors['South America'])
-    world[world['continent'] == 'Oceania'].plot(ax=ax, color=continent_colors['Oceania'])
-    world[world['continent'] == 'Antarctica'].plot(ax=ax, color=continent_colors['Antarctica'])
+    for key in continent_colors:
+        world[world['continent'] == key].plot(ax=ax, color=continent_colors[key])
 
     # Apply hatch pattern to countries with population >= threshold
     world[world['pop_est'] > threshold].plot(ax=ax, color='none', hatch='////', edgecolor='black')
@@ -46,7 +41,10 @@ for threshold in thresholds:
     plt.legend(handles=legend_labels, title="Populace")
 
     # Set the title of the map
-    ax.set_title('Populace států v roce 2023')
+    if threshold == thresholds[len(thresholds)-1]:
+        ax.set_title('Populácia štátov s viac ako polmiliardou ľudí v roku 2023')
+    else:    
+        ax.set_title('Populace států v roce 2023')
 
     # Show the map
     plt.show()
