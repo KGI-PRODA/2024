@@ -1,0 +1,15 @@
+Název úlohy: Automatizace procesu tvorby tištěných tyflomap
+
+1. Načtění dat z externího uložiště
+2. Ořez zájmového území
+3. Převod nehodících se prvků na prvky vhodné pro tyflokartografii 
+4. Nastavení jednothého stylu, layoutu, dalších náležitostí
+a. aplikace jednothé vizuálu pro stejné prvky (tloušťka, barva, šrafa, obrys...) např. hranice států bude linie 5 pt, černou barvou
+b. ověření dostatečného kontrastu
+c. přidání popisků
+d. texturování
+5. Převod výstupu na formát vhodný pro tiskárny tvořící tyflomapy
+
+
+
+10. 1. 2024 (ceny bez DPH)
