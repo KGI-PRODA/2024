@@ -25,14 +25,10 @@ for threshold in thresholds:
     # Plotting
     fig, ax = plt.subplots(1, 1, figsize=(15, 10))
 
+    for k, v in continent_colors.items():
     # Plot each continent with its assigned color, one by one
-    world[world['continent'] == 'Africa'].plot(ax=ax, color=continent_colors['Africa'])
-    world[world['continent'] == 'Europe'].plot(ax=ax, color=continent_colors['Europe'])
-    world[world['continent'] == 'Asia'].plot(ax=ax, color=continent_colors['Asia'])
-    world[world['continent'] == 'North America'].plot(ax=ax, color=continent_colors['North America'])
-    world[world['continent'] == 'South America'].plot(ax=ax, color=continent_colors['South America'])
-    world[world['continent'] == 'Oceania'].plot(ax=ax, color=continent_colors['Oceania'])
-    world[world['continent'] == 'Antarctica'].plot(ax=ax, color=continent_colors['Antarctica'])
+        world[world['continent'] == k].plot(ax=ax, color=continent_colors[k])
+ 
 
     # Apply hatch pattern to countries with population >= threshold
     world[world['pop_est'] > threshold].plot(ax=ax, color='none', hatch='////', edgecolor='black')
@@ -47,7 +43,8 @@ for threshold in thresholds:
 
     # Set the title of the map
     ax.set_title('Populace států v roce 2023')
-
+    if threshold == 500000000:
+        ax.set_title("Populace")
     # Show the map
     plt.show()
 
