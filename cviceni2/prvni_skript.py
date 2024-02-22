@@ -8,7 +8,7 @@ thresholds = [100000000, 300000000, 500000000]
 # Loop through the threshold values
 for threshold in thresholds:
 # Load the world map
-world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+    world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
 
     # Assign colors to each continent for differentiation
     # Key: Continent name, Value: Assigned color
