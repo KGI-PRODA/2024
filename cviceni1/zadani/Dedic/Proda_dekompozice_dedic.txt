@@ -1,0 +1,5 @@
+1, Nahrajeme si LAS data tůněk
+2, specifikujeme si tvar tůněk a rozdělíme do n
+ kategorii 
+3, vytvoříme algoritmus pro zařazování tůněk do kategorií dle specifikací 
+4, naučíme algoritmus zařazovat tůňky do kategorií tím, že mu budeme dávat spousty LAS dat tůněk
