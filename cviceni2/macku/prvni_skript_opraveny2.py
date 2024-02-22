@@ -28,8 +28,8 @@ for threshold in thresholds:
     # Plot each continent with its assigned color, one by one
     continent_name = ['Africa', 'Europe', 'Asia', 'North America', 'South America', 'Oceania', 'Antarctica']
 
-    for i in continent_name:
-        world[world['continent'] == i].plot(ax=ax, color=continent_colors[i])
+    for key in continent_colors:
+        world[world['continent'] == key].plot(ax=ax, color=continent_colors[key])
 
     #world[world['continent'] == 'Africa'].plot(ax=ax, color=continent_colors['Africa'])
     #world[world['continent'] == 'Europe'].plot(ax=ax, color=continent_colors['Europe'])
@@ -52,7 +52,7 @@ for threshold in thresholds:
 
     # Set the title of the map
     if threshold == 500000000:
-        ax.set_title('Jiný nadpis')
+        ax.set_title('Jiný')
     else: 
         ax.set_title('Populace států v roce 2023')
 
