@@ -1,0 +1,33 @@
+NAZOV
+spustenie viacerých kolokačných analýz pomocou arcpy v arcgis notebooku
+
+ZOZNAM KROKOV
+1) stiahnutie LULC Urban Atlas datasetu
+2) orezanie na záujmovú oblasť
+3) agregácia kategórii do väčších skupín vhodných na kolokačnú analýzu
+4) prevod polygónovej zdrojovej vrstvy na bodovú
+5) nastavenie parametrov kolokačnej analýzy
+6) spustenie vo for cykloch
+
+ZOZNAM MENŠÍCH ÚLOH
+- registrácia na copernicus, odkiaľ sa sťahujú Urban Atlas dáta
+- výber mesta
+- samotné stiahnutie
+- rozzipovanie a uloženie na vhodné miesto na disku
+
+- pomocou nástroja Clip orezanie na Urban Core
+
+- určenie kritéria, podľa ktorého agregujem kategórie do skupín
+- vymyslenie názvov skupín
+- pridanie nového poľa (stĺpec, atribút)
+- pomocou UpdateCursor naplnenie poľa názvami skupín
+
+- cez FeatureToPoint vytvorenie centroidov z polygónovej vrstvy
+
+- naštudovanie nastavení kolokačnej analýzy
+- výber viacerých možností parametrov, s ktorými chcem spustiť analýzu, uloženie do premenných a zoznamov
+
+- v 1. for cykle jeden parameter (veľkosť susedstva)
+- v 2. for cykle druhý parameter (váhová schéma)
+- v 3. for cykle tretí parameter (počet permutácií)
+- ukladanie názvov výstupných vrstiev

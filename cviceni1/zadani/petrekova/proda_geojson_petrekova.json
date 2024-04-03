@@ -1,0 +1,11 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [17.9719256,49.4727397]
+    },
+    "properties": {
+        "name": "DEZADATA", 
+        "popis": "firma"       
+    }
+}

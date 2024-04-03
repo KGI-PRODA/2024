@@ -1,10 +1,10 @@
 # PRODA - Materials for 2024 course
 
 New materials and tasks in folders:
-- `cviceni1/zadani`
-- `cviceni2/zadani`
+- `cviceni1`
+- `cviceni2`
 - ...
-- `cviceni10/zadani`
+- `cviceni10`
 
 Submit your work via Pull Requests to folders:
 - `cviceni1/your-surname`

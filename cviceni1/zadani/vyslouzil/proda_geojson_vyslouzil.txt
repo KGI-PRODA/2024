@@ -1,0 +1,17 @@
+Import a export dat v ArcGIS PRO
+
+1) Kontrola dat, zda jsou ve správném formátu
+	1a)kontrola formátu dat
+	1b)kontrola velikosti dat
+
+2) Import dat podle nějakých specifik
+	2a)import vybrané části dat
+
+3) Manipulace s daty, úlohy (geoprocesing)
+	3a) Vektorové operace, operace sousedství, změna geometrie
+4) analýzy dat a následná tvorba vizualizací
+	4a) práce se symbologii, opakována u více vrstev
+5) export dat 
+	5a) export do různých formátů
+6) kontrola dat
+	6a) chyby

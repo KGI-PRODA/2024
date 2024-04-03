@@ -1,0 +1,11 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [17.14,49.56]
+    },
+    "properties": {
+        "description":"Můj dům",
+        "name":"Cviko"
+    }
+}

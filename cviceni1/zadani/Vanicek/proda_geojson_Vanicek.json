@@ -1,0 +1,12 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [0,0]
+    },
+    "properties": {
+        "name": "Null Island",
+        "description": "This is the centre od the world!"
+        
+    }
+}
