@@ -6,7 +6,8 @@ for root,dirs,filenames in os.walk(os.getcwd()):
         if (filename.endswith(".png")):
             path = (os.path.join(root, filename)) 
             files.append(path)
-os.system("C:/GIMP/GIMP2/bin/gimp-2.10 " + " ".join(files))
+print(files)
+#os.system("C:/GIMP/GIMP2/bin/gimp-2.10 " + " ".join(files))
 
 """
 Skript, který otevírá snímky do GIMPU
